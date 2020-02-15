@@ -1,8 +1,6 @@
 
-var chars="abcdefghijklmnopqrstuvwxyz";
-var computerLetter = chars[Math.floor(Math.random()*chars.length)];
-console.log(computerLetter);
-
+newGame();
+var computerLetter;
 //Declaring variables
 var letterGuess = "";
 var wins = 0;
@@ -14,14 +12,15 @@ var guesses = [];
 function newGame(){
     guesses=[];
     attemptsLeft = 9;
-    var chars="abcdefghijklmnopqrstuvwxyz";
-    var computerLetter = chars[Math.floor(Math.random()*chars.length)];
+    //var chars="abcdefghijklmnopqrstuvwxyz";
+    var chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    computerLetter = chars[Math.floor(Math.random()*chars.length)];
     console.log(computerLetter);
     document.getElementById("guesses").innerText = guesses;
 };
 
 var button = document.getElementById("resetGame");
-document
+
 
 document.onkeyup = function(event){
     //store keystroke for comparison
@@ -41,14 +40,14 @@ document.onkeyup = function(event){
             wins++;
             document.getElementById("winTotal").innerHTML = wins;
             newGame();
-            guesses=[];
+            //guesses=[];
         } else {
             if(attemptsLeft === 0){
                 alert("You've lost!");
                 alert("The correct letter was: " + letterGuess.toUpperCase());
                 losses++;
                 newGame();
-                guesses=[];
+                //guesses=[];
                 document.getElementById("lossTotal").innerHTML = losses;
             }
             else{
