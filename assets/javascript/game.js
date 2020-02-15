@@ -20,10 +20,12 @@ function newGame(){
     document.getElementById("guesses").innerText = guesses;
 };
 
+var button = document.getElementById("resetGame");
+document
 
 document.onkeyup = function(event){
     //store keystroke for comparison
-    letterGuess = event.key.toLowerCase();
+    letterGuess = event.key.toUpperCase();
     
     
     if(guesses.indexOf(letterGuess) != -1){  //verify that a letter hasn't been guessed already
