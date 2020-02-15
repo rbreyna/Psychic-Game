@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel = "stylesheet" type="text/css" href="/assets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400i&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Economica:700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychic Game!</title>
 </head>
 <body>
+
+    <style>
+
+
+    </style>
 
     <div id = "gameTitle">
         <h1>Psychic Game!</h1>
     </div>
     
     <div id = "gameInfo">
-    <p>Guess the random letter that the computer has selected. Use the keys on the keyboard to guess the letter that the computer has chosen.</p>
-    <p>Guessed letters: <span id="guesses"></span></p>
-
+        <p>Guess the random letter that the computer has selected. Use the keys on the keyboard to guess the letter that the computer has chosen.</p>
+        <p>Guessed letters: <span id="guesses"></span></p>
+        <button id = "resetGame">Reset Game</button>
     </div>
+
+    
     <div id = "counters">
-    <p>Wins: <span id="winTotal">0</span></p>
-    <p>Losses: <span id="lossTotal">0</span></p>
-
+        <p>Wins: <span id="winTotal">0</span></p>
+        <p>Losses: <span id="lossTotal">0</span></p>
     </div>
+
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     
 </body>

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Economica', sans-serif;
+    width: auto;
+}
+
+#gameTitle{
+     
+     text-align: center;
+     padding: 5px;
+     background-color: navy;
+     color: oldlace;
+     margin-bottom: 10px;
+
+}
+
+#gameInfo{
+    float: left;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#counters{
+    float: left;
+    font-size: 18px;
+    
+}
+
+#resetGame{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 12px;
+    float: left;
+    margin-left: 100px;
+    background: black;
+    color: white;
+}
